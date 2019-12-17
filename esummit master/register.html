@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Registrations</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      function toggle(check_id, form_id) {
+          var form = document.getElementById(form_id);
+          if (document.getElementById(check_id).checked) {
+                form.style.display = "block";
+            }
+            else {
+                form.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body style="font-family: roboto;">
+    <div style="">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top nav-theme" style="height: 100px;">
+            <div class="container-fluid">
+              <a class="navbar-brand urs-logo" href="index.html">
+                <img class="img-fluid responsive-urs" src="assets/img/esummit.png" style="" alt="URS Logo" />
+              </a>
+
+              <div class="container div-Hidd">
+                  <h2 style="text-align: center">E-Summit</h2>
+                  <h5 style="text-align: center">24 January, 2020</h5>
+              </div>
+
+              <a href="https://www.mahindraecolecentrale.edu.in/" target="_blank">
+                <img class="img-fluid responsive-mec" src="assets/img/meclogo.png" style="" alt="Mahindra Ecole Centrale Logo" />
+              </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top main-nav theme-dark" style="margin: 100px 0px 0px; padding-left: 35px">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html" style="width: 50px;margin-right: 4em; color: white">
+                <strong>E-Summit</strong>
+              </a>
+              <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav flex-grow-1 justify-content-start menu-ul" id="navbar-custom">
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: white">Events</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="dropdown-item" role="presentation" href="presentation.html">Keynote</a></li>
+                            <li><a class="dropdown-item" role="presentation" href="startupsprint.html">Startup Sprint</a></li>
+                            <li><a class="dropdown-item" role="presentation" href="startupshowcase.html">Startup Showcase</a></li>
+                            <li><a class="dropdown-item" role="presentation" href="businessidea.html">Business Idea</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="register.html" style="color: white">Register</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="contact-us.html" style="color: white">Contact Us</a></li>
+                </ul>
+             </div>
+          </div>
+      </nav>
+    </div>
+
+
+    <div class="theme">
+      <div style="padding-top: 200px">
+        <h1 align="center">E-Summit Registration</h1>
+        <br> 
+        <div class = "container">
+        <h6 style = "font-weight:800;"> Notice : Applicants solely participating in Business Idea Showcase are requested to register below but refrain from paying until a mail confirming their entry has been sent back to them. For partaking in other events such as Startup Sprint, Startup Showcase and Keynotes/Panel Discussion, applicants are required to register as normal. </h6>
+        </div>
+      </div>
+          <div class="container">
+            <br>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-8 col-lg-4" style="margin-left:auto;margin-right:auto;" align="center">
+                  <label for="pbox" class="btn theme-dark" style="width:260px;">Startup Showcase<br><input onclick="toggle('pbox','presentation_form');" type="checkbox" id="pbox" class="badgebox"><span class="badge">&check;</span></label>
+                </div>
+                <div class="col-sm-8 col-lg-4" style="margin-left:auto;margin-right:auto;" align="center">
+                  <label for="dbox" class="btn theme-dark" style="width:260px;">Business Idea Competition<br><input type="checkbox" onclick="toggle('dbox','design_thinking_form');" id="dbox" class="badgebox"><span class="badge">&check;</span></label>
+                </div>
+                <div class="col-sm-8 col-lg-4" style="margin-left:auto;margin-right:auto;" align="center">
+                  <label for="hbox" class="btn theme-dark" style="width:260px;">Startup Sprint<br><input type="checkbox" onclick="toggle('hbox','hackathon_form');" id="hbox" class="badgebox"><span class="badge">&check;</span></label>
+                </div>
+                </div>
+              </div>
+            </div>
+            <br>
+
+    
+
+
+            <div class="container" style="padding-bottom: 200px">
+              <div id="presentation_form" style="display:none">
+                 <br>
+                  <h3 style="">Startup Showcase</h3>
+                  <form action="http://127.0.0.1:8080/" method="POST">
+                      <div class="form-group">
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                              <div class="col"><input class="form-control" name="name" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                              <div class="col"><input class="form-control" name="email" type="email"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                              <div class="col"><input class="form-control" name="phone" type="tel"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">College / University / Other</label></div>
+                              <div class="col"><input class="form-control" name="college" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Year of study (if student)</label></div>
+                              <div class="col"><input class="form-control" name="year" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Company Name</label></div>
+                              <div class="col"><input class="form-control" name="title" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Abstarct about startup :</label></div>
+                              <div class="col"><textarea class="form-control" name="abstract" rows="5" spellcheck="true"></textarea></div>
+                          </div>
+                          <input id="category" name="category" type="hidden" value="presentation">
+                          <div class="form-row" style="margin-top: 10px;">
+                              <div class="col" style="height: 3em;"><button class="btn theme-dark float-right" type="submit">Register Now</button></div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div id="hackathon_form" style="display:none">
+                  <h3 style="">Startup Sprint</h3>
+                  <form action="http://127.0.0.1:8080/" method="POST" style="margin-top: 10px">
+                      <div class="form-group">
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
+                              <div class="col"><input class="form-control" name="team_name" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                              <div class="col"><input class="form-control" name="name" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                              <div class="col"><input class="form-control" name="email" type="email"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                              <div class="col"><input class="form-control" name="phone" type="tel"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                              <div class="col"><input class="form-control" name="college" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                              <div class="col"><input class="form-control" name="year" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Team member 2</label></div>
+                              <div class="col"><input class="form-control" name="name2" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Team member 3</label></div>
+                              <div class="col"><input class="form-control" name="name3" type="text"></div>
+                          </div>
+                          <input id="category" name="category" type="hidden" value="hackathon">
+                          <div class="form-row" style="margin-top: 10px;">
+                              <div class="col" style="margin-top: 0px;"><button class="btn theme-dark float-right" type="submit">Register Now</button></div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div id="design_thinking_form" style="display:none">
+                  <h3 style="">Business Idea Competition</h3>
+                  <form action="http://127.0.0.1:8080/" method="POST" name="design_thinking" style="margin-top: 10px">
+                      <div class="form-group">
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
+                              <div class="col"><input class="form-control" name="team_name" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                              <div class="col"><input class="form-control" name="name" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                              <div class="col"><input class="form-control" name="email" type="email"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                              <div class="col"><input class="form-control" name="phone" type="tel"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                              <div class="col"><input class="form-control" name="college" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                              <div class="col"><input class="form-control" name="year" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Abstract</label></div>
+                              <div class="col"><textarea class="form-control" name="abstract" rows="5" spellcheck="true"></textarea></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Team member 2</label></div>
+                              <div class="col"><input class="form-control" name="name2" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Team member 3</label></div>
+                              <div class="col"><input class="form-control" name="name3" type="text"></div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Team member 4</label></div>
+                              <div class="col"><input class="form-control" name="name4" type="text"></div>
+                          </div>
+                          <input id="category" name="category" type="hidden" value="design_thinking">
+                          <div class="form-row" style="margin-top: 10px;">
+                              <div class="col"><button class="btn theme-dark float-right" type="submit">Register Now</button></div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+                  </div>
+            </div>
+
+  </div>
+  <div class="footer-dark theme-dark navbar-fixed-bottom">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>About</h3>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="startupsprint.html">Startup Sprint</a></li>
+                      <li><a href="register.html">Register</a></li>
+                      <li><a href="https://www.mahindraecolecentrale.edu.in/" target="_blank">Mahindra École Centrale</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>Events</h3>
+                  <ul>
+                      <li><a href="presentation.html">Keynote</a></li>
+                      <li><a href="startupsprint.html">Startup Sprint</a></li>
+                      <li><a href="startupshowcase.html">Startup Showcase</a></li>
+                      <li><a href="businessidea.html">Business Idea Competition</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6 item text">
+                  <h3>E-Summit 2020</h3>
+                  <p class="text-justify">The Entrepreneurhsip and Innovation Cell of Mahindra Ecole Centrale welcomes you to its first E-SUMMIT.  Scheduled for January 24th, 2020 the event will lay host to a variety of unique events such as the Startup Sprint in addition to various standard events such as Startup Showcase and Business Idea Competition. Entrepreneurs and Business leaders from all over India will be joining us to deliver keynote speeches, take part in panel discussions and interactions with the students. 
+
+                    <br><br></p>
+              </div>
+          </div>
+          <p class="copyright">E-Summit | Mahindra École Centrale © 2020</p>
+      </div>
+  </div>
+</body>
+
+</html>
