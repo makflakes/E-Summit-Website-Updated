@@ -76,7 +76,21 @@
         <h1 align="center">E-Summit Registration</h1>
         <br> 
         <div class = "container">
-        <h6 style = "font-weight:800;"> Notice : Applicants solely participating in Business Idea Showcase are requested to register below but refrain from paying until a mail confirming their entry has been sent back to them. For partaking in other events such as Startup Sprint, Startup Showcase and Keynotes/Panel Discussion, applicants are required to register as normal. </h6>
+        <h6 style = "font-weight:1000;"> Participation Fee : Rs. 200/-applicant.
+            <br>
+            <br>Name of the Bank: Kotak Mahindra Bank
+            <br>Account name: MAHINDRA ECOLE CENTRALE
+            <br>Type of account: Saving account
+            <br>Account No. 1711518501
+            <br>Branch: Kukatpally
+            <br>IFSC Code: KKBK0000560 </h6>
+        </div>
+        <br> 
+        <div class = "container">
+        <h6 style = "font-weight:100;"> Notice : 
+            <br> 1. Applicants solely participating in Business Idea Showcase are requested to register below but refrain from paying until a mail confirming their entry has been sent back to them. For partaking in other events such as Startup Sprint, Startup Showcase and Keynotes/Panel Discussion, applicants are required to register as normal.
+            <br> 2. Applicants are requested to complete the payment on behalf of their entire team through one UTR/Transaction Number (Example : If you are a 4 member team, you pay Rs. 800 (i.e 200x4) to the bank account mentioned above to confirm your team participation).
+            <br> 3. Participants applying for multiple events should produce the same UTR/Transaction Number in the respective events fields. </h6>
         </div>
       </div>
           <div class="container">
@@ -84,13 +98,13 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-8 col-lg-4" style="margin-left:auto;margin-right:auto;" align="center">
-                  <label for="pbox" class="btn theme-dark" style="width:260px;">Startup Showcase<br><input onclick="toggle('pbox','presentation_form');" type="checkbox" id="pbox" class="badgebox"><span class="badge">&check;</span></label>
+                  <label for="pbox" class="btn theme-dark" style="width:260px;">Startup Sprint<br><input onclick="toggle('pbox','hackathon_form');" type="checkbox" id="pbox" class="badgebox"><span class="badge">&check;</span></label>
                 </div>
                 <div class="col-sm-8 col-lg-4" style="margin-left:auto;margin-right:auto;" align="center">
                   <label for="dbox" class="btn theme-dark" style="width:260px;">Business Idea Competition<br><input type="checkbox" onclick="toggle('dbox','design_thinking_form');" id="dbox" class="badgebox"><span class="badge">&check;</span></label>
                 </div>
                 <div class="col-sm-8 col-lg-4" style="margin-left:auto;margin-right:auto;" align="center">
-                  <label for="hbox" class="btn theme-dark" style="width:260px;">Startup Sprint<br><input type="checkbox" onclick="toggle('hbox','hackathon_form');" id="hbox" class="badgebox"><span class="badge">&check;</span></label>
+                  <label for="hbox" class="btn theme-dark" style="width:260px;">Keynote & Panel Discussion<br><input type="checkbox" onclick="toggle('hbox','presentation_form');" id="hbox" class="badgebox"><span class="badge">&check;</span></label>
                 </div>
                 </div>
               </div>
@@ -103,7 +117,7 @@
             <div class="container" style="padding-bottom: 200px">
               <div id="presentation_form" style="display:none">
                  <br>
-                  <h3 style="">Startup Showcase</h3>
+                  <h3 style="">Keynote & Panel Discussion</h3>
                   <form action="http://127.0.0.1:8080/" method="POST">
                       <div class="form-group">
                           <div class="form-row">
@@ -127,13 +141,9 @@
                               <div class="col"><input class="form-control" name="year" type="text"></div>
                           </div>
                           <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">Company Name </label></div>
-                              <div class="col"><input class="form-control" name="title" type="text" required></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">Abstarct about startup </label></div>
-                              <div class="col"><textarea class="form-control" name="abstract" rows="5" spellcheck="true" required></textarea></div>
-                          </div>
+                            <div class="col-xl-4 required"><label class="col-form-label">UTR/Transaction Number </label></div>
+                            <div class="col"><input class="form-control" name="phone" type="text" required></div>
+                        </div>
                           <input id="category" name="category" type="hidden" value="presentation">
                           <div class="form-row" style="margin-top: 10px;">
                               <div class="col" style="height: 3em;"><button class="btn theme-dark float-right" type="submit">Register Now</button></div>
@@ -177,6 +187,10 @@
                               <div class="col-xl-4"><label class="col-form-label">Team member 3</label></div>
                               <div class="col"><input class="form-control" name="name3" type="text"></div>
                           </div>
+                          <div class="form-row">
+                            <div class="col-xl-4 required"><label class="col-form-label">UTR/Transaction Number </label></div>
+                            <div class="col"><input class="form-control" name="phone" type="text" required></div>
+                        </div>
                           <input id="category" name="category" type="hidden" value="hackathon">
                           <div class="form-row" style="margin-top: 10px;">
                               <div class="col" style="margin-top: 0px;"><button class="btn theme-dark float-right" type="submit">Register Now</button></div>
@@ -230,7 +244,7 @@
                           </div>
                           <input id="category" name="category" type="hidden" value="design_thinking">
                           <div class="form-row" style="margin-top: 10px;">
-                              <div class="col"><button class="btn theme-dark float-right" type="submit">Register Now</button></div>
+                              <div class="col"><button class="btn theme-dark float-right" type="submit">Submit</button></div>
                           </div>
                       </div>
                   </form>
@@ -274,4 +288,3 @@
 </body>
 
 </html>
-
