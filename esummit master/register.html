@@ -122,6 +122,149 @@
 
 
             <div class="container" style="padding-bottom: 200px">
+
+                <div id="hackathon_form" style="display:none">
+                    <h3 style="">Startup Sprint</h3>
+                    <form action="http://127.0.0.1:8080/" method="POST" style="margin-top: 10px">
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
+                                <div class="col"><input class="form-control" name="team_name" type="text"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
+                                <div class="col"><input class="form-control" name="name" type="text" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Email</label></div>
+                                <div class="col"><input class="form-control" name="email" type="email" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Phone Number</label></div>
+                                <div class="col"><input class="form-control" name="phone" type="tel" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">College / University / Other</label></div>
+                                <div class="col"><input class="form-control" name="college" type="text" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                                <div class="col"><input class="form-control" name="year" type="text"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4"><label class="col-form-label">Team member 2</label></div>
+                                <div class="col"><input class="form-control" name="name2" type="text"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4"><label class="col-form-label">Team member 3</label></div>
+                                <div class="col"><input class="form-control" name="name3" type="text"></div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-xl-4"><label class="col-form-label">Team member 4</label></div>
+                              <div class="col"><input class="form-control" name="name3" type="text"></div>
+                          </div>
+                            <div class="form-row">
+                              <div class="col-xl-4 required"><label class="col-form-label">UTR/Transaction Number </label></div>
+                              <div class="col"><input class="form-control" name="phone" type="text" required></div>
+                          </div>
+                            <input id="category" name="category" type="hidden" value="hackathon">
+                            <div class="form-row" style="margin-top: 10px;">
+                                <div class="col" style="margin-top: 0px;"><button class="btn theme-dark float-right" type="submit">Register Now</button></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="design_thinking_form" style="display:none">
+                    <h3 style="">Business Idea Competition</h3>
+                    <form action="http://127.0.0.1:8080/" method="POST" name="design_thinking" style="margin-top: 10px">
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
+                                <div class="col"><input class="form-control" name="team_name" type="text"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
+                                <div class="col"><input class="form-control" name="name" type="text" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Email</label></div>
+                                <div class="col"><input class="form-control" name="email" type="email" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Phone Number</label></div>
+                                <div class="col"><input class="form-control" name="phone" type="tel" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">College / University / Other</label></div>
+                                <div class="col"><input class="form-control" name="college" type="text" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                                <div class="col"><input class="form-control" name="year" type="text"></div>
+                            </div>
+                          
+                            <div class="form-row">
+                                <div class="col-xl-4"><label class="col-form-label">Team member 2</label></div>
+                                <div class="col"><input class="form-control" name="name2" type="text"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4"><label class="col-form-label">Team member 3</label></div>
+                                <div class="col"><input class="form-control" name="name3" type="text"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4"><label class="col-form-label">Team member 4</label></div>
+                                <div class="col"><input class="form-control" name="name4" type="text"></div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-xl-4 required"><label class="col-form-label">UTR/Transaction Number </label></div>
+                              <div class="col"><input class="form-control" name="phone" type="text" required></div>
+                          </div>
+                            <input id="category" name="category" type="hidden" value="design_thinking">
+                            <div class="form-row" style="margin-top: 10px;">
+                                <div class="col"><button class="btn theme-dark float-right" type="submit">Submit</button></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="showcase_form" style="display:none">
+                    <h3 style="">Startup Showcase</h3>
+                    <form action="http://127.0.0.1:8080/" method="POST" style="margin-top: 10px">
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Company Name</label></div>
+                                <div class="col"><input class="form-control" name="team_name" type="text" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
+                                <div class="col"><input class="form-control" name="name" type="text" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Email</label></div>
+                                <div class="col"><input class="form-control" name="email" type="email" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Phone Number</label></div>
+                                <div class="col"><input class="form-control" name="phone" type="tel" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4"><label class="col-form-label">College / University / Other</label></div>
+                                <div class="col"><input class="form-control" name="college" type="text"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-4 required"><label class="col-form-label">Company and Idea Abstract</label></div>
+                                <div class="col"><textarea class="form-control" name="abstract" rows="5" spellcheck="true" required></textarea></div>
+                            </div>
+                            <input id="category" name="category" type="hidden" value="hackathon">
+                            <div class="form-row" style="margin-top: 10px;">
+                                <div class="col" style="margin-top: 0px;"><button class="btn theme-dark float-right" type="submit">Submit</button></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+
               <div id="presentation_form" style="display:none">
                  <br>
                   <h3 style="">Keynote & Panel Discussion</h3>
@@ -158,146 +301,8 @@
                       </div>
                   </form>
               </div>
-              <div id="hackathon_form" style="display:none">
-                  <h3 style="">Startup Sprint</h3>
-                  <form action="http://127.0.0.1:8080/" method="POST" style="margin-top: 10px">
-                      <div class="form-group">
-                          <div class="form-row">
-                              <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
-                              <div class="col"><input class="form-control" name="team_name" type="text"></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
-                              <div class="col"><input class="form-control" name="name" type="text" required></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">Email</label></div>
-                              <div class="col"><input class="form-control" name="email" type="email" required></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">Phone Number</label></div>
-                              <div class="col"><input class="form-control" name="phone" type="tel" required></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">College / University / Other</label></div>
-                              <div class="col"><input class="form-control" name="college" type="text" required></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
-                              <div class="col"><input class="form-control" name="year" type="text"></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4"><label class="col-form-label">Team member 2</label></div>
-                              <div class="col"><input class="form-control" name="name2" type="text"></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4"><label class="col-form-label">Team member 3</label></div>
-                              <div class="col"><input class="form-control" name="name3" type="text"></div>
-                          </div>
-                          <div class="form-row">
-                            <div class="col-xl-4"><label class="col-form-label">Team member 4</label></div>
-                            <div class="col"><input class="form-control" name="name3" type="text"></div>
-                        </div>
-                          <div class="form-row">
-                            <div class="col-xl-4 required"><label class="col-form-label">UTR/Transaction Number </label></div>
-                            <div class="col"><input class="form-control" name="phone" type="text" required></div>
-                        </div>
-                          <input id="category" name="category" type="hidden" value="hackathon">
-                          <div class="form-row" style="margin-top: 10px;">
-                              <div class="col" style="margin-top: 0px;"><button class="btn theme-dark float-right" type="submit">Register Now</button></div>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-
-              <div id="showcase_form" style="display:none">
-                <h3 style="">Startup Showcase</h3>
-                <form action="http://127.0.0.1:8080/" method="POST" style="margin-top: 10px">
-                    <div class="form-group">
-                        <div class="form-row">
-                            <div class="col-xl-4 required"><label class="col-form-label">Company Name</label></div>
-                            <div class="col"><input class="form-control" name="team_name" type="text" required></div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
-                            <div class="col"><input class="form-control" name="name" type="text" required></div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-xl-4 required"><label class="col-form-label">Email</label></div>
-                            <div class="col"><input class="form-control" name="email" type="email" required></div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-xl-4 required"><label class="col-form-label">Phone Number</label></div>
-                            <div class="col"><input class="form-control" name="phone" type="tel" required></div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-xl-4"><label class="col-form-label">College / University / Other</label></div>
-                            <div class="col"><input class="form-control" name="college" type="text"></div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-xl-4 required"><label class="col-form-label">Company and Idea Abstract</label></div>
-                            <div class="col"><textarea class="form-control" name="abstract" rows="5" spellcheck="true" required></textarea></div>
-                        </div>
-                        <input id="category" name="category" type="hidden" value="hackathon">
-                        <div class="form-row" style="margin-top: 10px;">
-                            <div class="col" style="margin-top: 0px;"><button class="btn theme-dark float-right" type="submit">Submit</button></div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-              <div id="design_thinking_form" style="display:none">
-                  <h3 style="">Business Idea Competition</h3>
-                  <form action="http://127.0.0.1:8080/" method="POST" name="design_thinking" style="margin-top: 10px">
-                      <div class="form-group">
-                          <div class="form-row">
-                              <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
-                              <div class="col"><input class="form-control" name="team_name" type="text"></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
-                              <div class="col"><input class="form-control" name="name" type="text" required></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">Email</label></div>
-                              <div class="col"><input class="form-control" name="email" type="email" required></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">Phone Number</label></div>
-                              <div class="col"><input class="form-control" name="phone" type="tel" required></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">College / University / Other</label></div>
-                              <div class="col"><input class="form-control" name="college" type="text" required></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
-                              <div class="col"><input class="form-control" name="year" type="text"></div>
-                          </div>
-                        
-                          <div class="form-row">
-                              <div class="col-xl-4"><label class="col-form-label">Team member 2</label></div>
-                              <div class="col"><input class="form-control" name="name2" type="text"></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4"><label class="col-form-label">Team member 3</label></div>
-                              <div class="col"><input class="form-control" name="name3" type="text"></div>
-                          </div>
-                          <div class="form-row">
-                              <div class="col-xl-4"><label class="col-form-label">Team member 4</label></div>
-                              <div class="col"><input class="form-control" name="name4" type="text"></div>
-                          </div>
-                          <div class="form-row">
-                            <div class="col-xl-4 required"><label class="col-form-label">UTR/Transaction Number </label></div>
-                            <div class="col"><input class="form-control" name="phone" type="text" required></div>
-                        </div>
-                          <input id="category" name="category" type="hidden" value="design_thinking">
-                          <div class="form-row" style="margin-top: 10px;">
-                              <div class="col"><button class="btn theme-dark float-right" type="submit">Submit</button></div>
-                          </div>
-                      </div>
-                  </form>
-              </div>
+              
+              
                   </div>
             </div>
 
