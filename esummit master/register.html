@@ -125,7 +125,7 @@
 
                 <div id="hackathon_form" style="display:none">
                     <h3 style="">Startup Sprint</h3>
-                    <form action="mailto:esummit@mechyd.ac.in" method="POST" name = "Startup Sprint" enctype="multipart/form-data" style="margin-top: 10px">
+                    <form class="gform" action = "https://script.google.com/macros/s/AKfycbzY9B12-TNZDy3ecoPwvAqB5tOKVQE1vlrXuk-M/exec" method="POST" data email = "esummit@mechyd.ac.in" name = "Startup Sprint" enctype="multipart/form-data" style="margin-top: 10px">
                         <div class="form-group">
                             <div class="form-row">
                                 <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
@@ -161,13 +161,13 @@
                             </div>
                             <div class="form-row">
                               <div class="col-xl-4"><label class="col-form-label">Team member 4</label></div>
-                              <div class="col"><input class="form-control" name="name3" type="text"></div>
+                              <div class="col"><input class="form-control" name="name4" type="text"></div>
                           </div>
                             <div class="form-row">
                               <div class="col-xl-4 required"><label class="col-form-label">UTR/Transaction Number </label></div>
-                              <div class="col"><input class="form-control" name="phone" type="text" required></div>
+                              <div class="col"><input class="form-control" name="TransactionID" type="text" required></div>
                           </div>
-                            <input id="category" name="category" type="hidden" value="hackathon">
+                            <input id="category" name="category" type="hidden" value="StartupSprint">
                             <div class="form-row" style="margin-top: 10px;">
                                 <div class="col" style="margin-top: 0px;"><button class="btn theme-dark float-right" type="submit">Register Now</button></div>
                             </div>
@@ -177,7 +177,7 @@
 
                 <div id="design_thinking_form" style="display:none">
                     <h3 style="">Business Idea Competition</h3>
-                    <form action="mailto:esummit@mechyd.ac.in" method="POST" name="Business Idea Competition"  enctype="multipart/form-data" style="margin-top: 10px">
+                    <form class="gform" action = "https://script.google.com/macros/s/AKfycbyafs8ib1cXFM2MsByBo7dpXb7gkWoWbS_DvbJ-/exec" method="POST" data email = "esummit@mechyd.ac.in" name="Business Idea Competition"  enctype="multipart/form-data" style="margin-top: 10px">
                         <div class="form-group">
                             <div class="form-row">
                                 <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
@@ -218,9 +218,9 @@
                             </div>
                             <div class="form-row">
                               <div class="col-xl-4 required"><label class="col-form-label">UTR/Transaction Number </label></div>
-                              <div class="col"><input class="form-control" name="phone" type="text" required></div>
+                              <div class="col"><input class="form-control" name="TransactionID" type="text" required></div>
                           </div>
-                            <input id="category" name="category" type="hidden" value="design_thinking">
+                            <input id="category" name="category" type="hidden" value="Business Idea Competition">
                             <div class="form-row" style="margin-top: 10px;">
                                 <div class="col"><button class="btn theme-dark float-right" type="submit">Submit</button></div>
                             </div>
@@ -230,11 +230,11 @@
 
                 <div id="showcase_form" style="display:none">
                     <h3 style="">Startup Showcase</h3>
-                    <form action="mailto:esummit@mechyd.ac.in" method="POST" name = "Startup Showcase" enctype="multipart/form-data" style="margin-top: 10px">
+                    <form class="gform" action = "https://script.google.com/macros/s/AKfycbxnXtQiUXJFqQKVnfUTF5c0RbQrA_zsFJRaelUs/exec" method="POST" data email = "esummit@mechyd.ac.in" name = "Startup Showcase" enctype="multipart/form-data" style="margin-top: 10px">
                         <div class="form-group">
                             <div class="form-row">
                                 <div class="col-xl-4 required"><label class="col-form-label">Company Name</label></div>
-                                <div class="col"><input class="form-control" name="team_name" type="text" required></div>
+                                <div class="col"><input class="form-control" name="company_name" type="text" required></div>
                             </div>
                             <div class="form-row">
                                 <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
@@ -258,9 +258,9 @@
                             </div>
                             <div class="form-row">
                                 <div class="col-xl-4 required"><label class="col-form-label">Requirements (tables, power points...)</label></div>
-                                <div class="col"><textarea class="form-control" name="abstract" rows="5" spellcheck="true" required></textarea></div>
+                                <div class="col"><textarea class="form-control" name="abstract" rows="3" spellcheck="true" required></textarea></div>
                             </div>
-                            <input id="category" name="category" type="hidden" value="hackathon">
+                            <input id="category" name="category" type="hidden" value="Startup Showcase">
                             <div class="form-row" style="margin-top: 10px;">
                                 <div class="col" style="margin-top: 0px;"><button class="btn theme-dark float-right" type="submit">Submit</button></div>
                             </div>
@@ -272,14 +272,14 @@
               <div id="presentation_form" style="display:none">
                  <br>
                   <h3 style="">Keynote & Panel Discussion</h3>
-                  <form action="mailto:esummit@mechyd.ac.in" name = "Keynotes" enctype="multipart/form-data"  method="POST">
+                  <form class="gform" action = "https://script.google.com/macros/s/AKfycbz9ikJeDvRXTPzH8pFPAful1yuspeLfEW4DtC1r4wmOVd5q548q/exec" method="POST" data email = "esummit@mechyd.ac.in" name = "Keynotes">
                       <div class="form-group">
                           <div class="form-row">
                               <div class="col-xl-4 required"><label class="col-form-label">Name </label></div>
                               <div class="col"><input class="form-control" name="name" type="text" required></div>
                           </div>
                           <div class="form-row">
-                              <div class="col-xl-4 required"><label class="col-form-label">Email </label></div>
+                              <div class="col-xl-4 required"><label class="col-form-label">Email Address </label></div>
                               <div class="col"><input class="form-control" name="email" type="email" required></div>
                           </div>
                           <div class="form-row">
@@ -296,9 +296,9 @@
                           </div>
                           <div class="form-row">
                             <div class="col-xl-4 required"><label class="col-form-label">UTR/Transaction Number </label></div>
-                            <div class="col"><input class="form-control" name="phone" type="text" required></div>
+                            <div class="col"><input class="form-control" name="TransactionID" type="text" required></div>
                         </div>
-                          <input id="category" name="category" type="hidden" value="presentation">
+                          <input id="category" name="category" type="hidden" value="Keynote">
                           <div class="form-row" style="margin-top: 10px;">
                               <div class="col" style="height: 3em;"><button class="btn theme-dark float-right" type="submit">Register Now</button></div>
                           </div>
